@@ -15,9 +15,9 @@ describe('API Tests', () => {
         expect(res.body).toHaveProperty('message', 'Item added'); 
     }); 
  
-it('POST /home - Error si no se envía item', async () => { 
-const res = await request(app).post('/home').send({}); 
-expect(res.status).toBe(400); 
-expect(res.body).toHaveProperty('error', 'Item is required'); 
-}); 
+    it('POST /home - Error si no se envía item', async () => { 
+        const res = await request(app).post('/home').send({}); 
+        expect(res.status).toBe(400); 
+        expect(res.body).toHaveProperty('error', 'Item is required'); 
+    }); 
 }); 
