@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --forceExit",
+    "start": "node server.js",
+    "build": "echo 'No hay proceso de compilación en este proyecto'",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -18,9 +21,3 @@
     "supertest": "^7.1.0"
   }
 }
-"scripts": { 
-"start": "node server.js", 
-"build": "echo 'No hay proceso de compilación en este proyecto'", 
-"test": "jest --forceExit", 
-"lint": "eslint ." 
-} 
